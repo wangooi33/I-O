@@ -1,3 +1,6 @@
+//达到能动的效果->最少24Hz->取整25Hz（一秒钟切换25张图片）    40ms
+//不低于40ms
+
 #include <stdio.h>
 #include <sys/mman.h>
 
