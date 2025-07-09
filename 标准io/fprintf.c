@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(int argc,char *argv[])
 {
-    FILE *fp=fopen(" ","rb");
+    FILE *fp=fopen("xxx.txt","rb");
     if(NULL==fp)
     {
         perror("fopen is failed");

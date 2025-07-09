@@ -27,8 +27,10 @@ int main(int argc,char *argv[])
 {
 	int lcd_fl=open("dev/fd0",O_RDWR);
 
-	struct fb_var_screeninfo lcd_vinfo;
+	struct fb_fix_screeninfo lcd_finfo;//主要用于获取FrameBuffer的固定参数
+	struct fb_var_screeninfo lcd_vinfo;//主要用于获取和设置FrameBuffer的可变（虚拟）屏幕参数
 
+	//请求信息去看:/usr/include/linux/fb.h
 	ioctl(lcd_fl,FBIOGET_VSCREENINFO,&lcd_vinfo);
 
 	printf("lcd width=%d\n",lcd_vinfo.xres);

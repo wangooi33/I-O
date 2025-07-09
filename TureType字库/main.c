@@ -5,6 +5,10 @@
 
 #include "./include/font.h"
 #include "./include/font_c.h"
+
+//区码和位码分别是2个字节
+//16x16的汉字是32个字节
+
 int main(int argc,char *argv[])
 {
     //1.打开LCD

@@ -4,6 +4,8 @@
 #include <errno.h>
 #include <string.h>
 
+//man 2 stat
+
 // 要求：检查一个路径是否为字符设备
 int main(int argc, char const *argv[])
 {

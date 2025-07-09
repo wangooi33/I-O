@@ -19,7 +19,8 @@
 #pragma pack(1)
 
 typedef struct {
-	unsigned short bfType;
+	unsigned char bfType[0];
+	unsigned char bfType[1];
 	unsigned int   bfSize;//位图文件大小，单位字节
 	unsigned short bfReserved1;
 	unsigned short bfReserved2;

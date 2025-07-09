@@ -23,6 +23,8 @@ int main(int argc,char const *argv[])
     }
     //2.打开文件，并进行错误处理
     FILE *src_fp=fopen(argv[1],"rb");//待拷贝文件
+	//b：二进制方式打开，不会对特殊字符进行解释，而是作为普通字符
+
     if(NULL==src_fp){
         printf("fopen %s is errer",argv[1]);
         exit(1);

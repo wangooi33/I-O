@@ -2,6 +2,15 @@
 #include <dirent.h>
 #include <sys/types.h>
 
+/*	
+ *	man 2 ...
+ * 	1.创建目录：mkdir
+ *	2.删除目录：rmdir
+ *	3.进入目录：chdir
+ *
+*/
+
+
 //要求：把指定路径下的规则文件的文件名称输出到终端
 int main(int argc, char const *argv[])
 {
