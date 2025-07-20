@@ -29,7 +29,7 @@
 
 #pragma pack(1)
 typedef struct {
-    unsigned short bfType;
+    unsigned char  bfType[2];
     unsigned int   bfSize;
     unsigned short bfReserved1;
     unsigned short bfReserved2;

@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "font.h": "c"
-    }
+		"font.h": "c",
+		"types.h": "c",
+		"stat.h": "c"
+	}
 }

@@ -43,6 +43,7 @@ typedef struct {
 
 #pragma pack()
 
+
 void ShowBmp_OpPosition(const char *name, int offset_x, int offset_y, int *lcd_mp) {
 	FILE *bmp_fp = fopen(name, "rb");
 	if (bmp_fp == NULL) {
@@ -81,7 +82,7 @@ void ShowBmp_OpPosition(const char *name, int offset_x, int offset_y, int *lcd_m
 			unsigned char G = bmp_buf[(height - 1 - y) * row_bytes + x * 3 + 1];
 			unsigned char R = bmp_buf[(height - 1 - y) * row_bytes + x * 3 + 2];
 
-			int color = (R << 16) | (G << 8) | B;
+			int color = (R << 16) | (G << 8) | B;//无透明度
 
 			if (lcd_x >= 0 && lcd_x < 800 && lcd_y >= 0 && lcd_y < 480) {
 				lcd_mp[lcd_y * 800 + lcd_x] = color;
@@ -99,7 +100,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	const char *bmp_path = argv[1];
-	int x = atoi(argv[2]);
+	int x = atoi(argv[2]);//字符型->整型
 	int y = atoi(argv[3]);
 
 	int lcd_fd = open("/dev/fb0", O_RDWR);

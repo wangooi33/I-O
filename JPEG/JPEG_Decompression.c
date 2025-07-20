@@ -1,6 +1,8 @@
 /*
-    arm-linux-gcc jpeg_show.c -o jepg_show -I ./include -L ./lib -jpeg
+    arm-linux-gcc xxx.c -o xxx -I ./include -L ./lib -jpeg
 */
+
+//Decompression:解压（解码0，得到jpg图片的颜色分量，可以显示到LCD屏幕上
 
 #include <stdio.h>
 #include <stdlib.h>

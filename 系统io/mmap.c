@@ -1,3 +1,13 @@
+/*
+ * 1.打开设备 /dev/fb0
+ * 2.ioctl获取信息
+ * 3.mmap地址映射
+ * 4.填充显存数据
+ * 5.释放现存munmap
+ * 6.关闭设备close
+ * 
+*/
+
 /**
   * @file name:color_mmap.c
   * @brief    :用红色填满LCD屏幕
